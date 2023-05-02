@@ -24,9 +24,37 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/marginY"
         android:layout_marginStart="@dimen/marginX"
+        android:layout_marginEnd="@dimen/marginX"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintTop_toBottomOf="@+id/text_header"
         app:layout_constraintStart_toStartOf="parent"
         />
+
+    <Button
+        android:id="@+id/button_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/marginX"
+        android:layout_marginBottom="@dimen/marginX"
+        android:text="@string/button_second"
+        android:textAllCaps="true"
+        android:onClick="returnReply"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/editText_second"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/marginX"
+        android:layout_marginEnd="@dimen/marginX"
+        android:layout_marginBottom="@dimen/marginY"
+        android:hint="@string/editText_second"
+        android:ems="10"
+        android:inputType="textLongMessage"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button_second"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

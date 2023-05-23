@@ -29,6 +29,9 @@ public class MainActivity extends AppCompatActivity {
         mReplyHeadTextView = findViewById(R.id.text_header_reply);
         mReplyMessageTextView = findViewById(R.id.text_message_reply);
 
+        Log.d(LOG_TAG, "________");
+        Log.d(LOG_TAG, "OnCreate");
+
     }
 
     public void launchSecondActivity(View view) {
@@ -59,4 +62,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
     }
+
+    // CICLO DE VIDA Y ESTADO DE LA ACTIVITY
+
 }

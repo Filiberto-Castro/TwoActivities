@@ -4,12 +4,14 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
 public class SecondActivity extends AppCompatActivity {
 
+    private static final String LOG_TAG = SecondActivity.class.getSimpleName();
     public static final String EXTRA_REPLY = "com.zerocode.twoactivities.extra.REPLY";
     private TextView text_message;
     private EditText mReply;
@@ -27,6 +29,9 @@ public class SecondActivity extends AppCompatActivity {
 
         text_message.setText(message);
 
+        Log.d(LOG_TAG, "_____________");
+        Log.d(LOG_TAG, "OnCreate");
+
     }
 
     public void returnReply(View view) {
@@ -37,4 +42,7 @@ public class SecondActivity extends AppCompatActivity {
         setResult(RESULT_OK, replyIntent);
         finish();
     }
+
+    // CICLO DE VIDA Y ESTADO DE LA ACTIVITY
+
 }
